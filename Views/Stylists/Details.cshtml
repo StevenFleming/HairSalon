@@ -3,13 +3,13 @@
 @{
     Layout = "_Layout";
 }
-
+@using HairSalon.Models;
 @model HairSalon.Models.Stylist
 
-<h2>Stylist Details</h2>
+<h2>Stylist Clients</h2>
 <hr />
-<p>Click on the stylist name to see their current clientel</p>
-<h3>@Html.ActionLink($"{ Model.Name }", "Index", "Clients")</h3>
+<ul>
+<h3>@Html.ActionLink($"{ Model.Name } Clients", "Index", "Clients")</h3>
+<p>@Html.ActionLink("Back to list", "Index")</p>
 
-<p>@Html.ActionLink("Back to Stylists Lists", "Index", "Clients")
 <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
