@@ -30,3 +30,5 @@
 /Users/Guest/Desktop/HairSalon.Solution/HairSalon/bin/Debug/netcoreapp2.2/HairSalon.Views.pdb
 /Users/Guest/Desktop/HairSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.Views.pdb
 /Users/Guest/Desktop/HairSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.csproj.CopyComplete
+/Users/Guest/Desktop/HairSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/Razor/Views/Clients/Edit.g.cshtml.cs
+/Users/Guest/Desktop/HairSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/Razor/Views/Stylists/Edit.g.cshtml.cs

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using HairSalon.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HairSalon.Controllers
 {
@@ -51,6 +53,21 @@ namespace HairSalon.Controllers
     {
         var thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
         _db.Stylists.Remove(thisStylist);
+        _db.SaveChanges();
+        return RedirectToAction("Index");
+    }
+
+    public ActionResult Edit(int id)
+    {
+        var thisStylist = _db.Stylists.FirstOrDefault(stylists => stylists.StylistId == id);
+        ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+        return View(thisStylist);
+    }
+
+    [HttpPost]
+    public ActionResult Edit(Stylist stylist)
+    {
+        _db.Entry(stylist).State = EntityState.Modified;
         _db.SaveChanges();
         return RedirectToAction("Index");
     }
