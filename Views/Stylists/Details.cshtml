@@ -11,5 +11,5 @@
 <p>Click on the Stylist Name to See her Current Clientel</p>
 <h3>@Html.ActionLink($"{ Model.Name }", "Index", "Clients")</h3>
 
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Back to Stylists Lists", "Index", "Clients")
 <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.Id })</p>
