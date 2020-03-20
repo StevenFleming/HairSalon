@@ -12160,9 +12160,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/HairSalon.Solution/HairSalon/NonProfitTracker.csproj",
-      "projectName": "NonProfitTracker",
-      "projectPath": "/Users/Guest/Desktop/HairSalon.Solution/HairSalon/NonProfitTracker.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/HairSalon.Solution/HairSalon/HairSalon.csproj",
+      "projectName": "HairSalon",
+      "projectPath": "/Users/Guest/Desktop/HairSalon.Solution/HairSalon/HairSalon.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
       "outputPath": "/Users/Guest/Desktop/HairSalon.Solution/HairSalon/obj/",
       "projectStyle": "PackageReference",

@@ -1,12 +1,17 @@
-using System;
+
 using System.Collections.Generic;
-using MySql.Data.MySqlClient;
 
 namespace HairSalon.Models
 {
     public class Stylist
     {
+        public Stylist()
+        {
+            this.Clients = new HashSet<Client>();
+        }
+
         public string Name {get; set;}
-        public int Id {get; set;}
+        public int StylistId {get; set;}
+        public virtual ICollection<Client> Clients { get; set; }
     }
 }
