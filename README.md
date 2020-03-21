@@ -24,13 +24,13 @@ Download or clone the repository to run this program locally! _This program requ
         - To construct import from this file:
         - Open MySQL Workbench. In the Navigator > Administration window, select Data Import/Restore.
         - From Import Options select Import from Self-Contained File.
-        > CREATE Schemea steven_fleming;
-        > This program is currently set to look for a database called 'steven_fleming'. If you use a different name, you will need to change the connection string in appsettings.json to reflect this.
-        > CREATE TABLE clients (clientid int (11) PRIMARY KEY, NEVERNULL, AUTO INCREMENTING, name VARCHAR(100,clientid int(11), NEVER NULL, DEFALUT 0);
-        > Click Apply
-        > CREATE TABLE stylists (stylistid int (11) PRIMARY KEY, NEVERNULL, AUTO INCREMENTING,  name VARCHAR(100), clientid int(11), NEVER NULL, DEFALUT 0);
+        - CREATE Schemea steven_fleming;
+        - This program is currently set to look for a database called 'steven_fleming'. If you use a different name, you will need to change the connection string in appsettings.json to reflect this.
+        - CREATE TABLE clients (clientid int (11) PRIMARY KEY, NEVERNULL, AUTO INCREMENTING, name VARCHAR(100,clientid int(11), NEVER NULL, DEFALUT 0);
+        - Click Apply
+        - CREATE TABLE stylists (stylistid int (11) PRIMARY KEY, NEVERNULL, AUTO INCREMENTING,  name VARCHAR(100), clientid int(11), NEVER NULL, DEFALUT 0);
         Click Start Import.
-        > Click Apply
+        - Click Apply
 - Once you have stored the files locally, execute the following commands.
   - Navigate to the application directory: `$ cd HairSalon.Solution/HairSalon`
   - `dotnet build`
