@@ -21,7 +21,9 @@
     <li> @client.Name</li>
 }
 
-<h3>@Html.ActionLink($"{ Model.Name } Clients", "Index", "Clients")</h3>
-<p>@Html.ActionLink("Back to list", "Index")</p>
 
-<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+<br>
+<h4>@Html.ActionLink($" List of all Clients", "Index", "Clients")</h3>
+<h4>@Html.ActionLink("List of all Stylists", "Index")</p>
+
+<h4>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
