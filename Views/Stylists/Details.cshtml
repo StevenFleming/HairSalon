@@ -6,9 +6,21 @@
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist
 
-<h2>Stylist Clients</h2>
+<h2>Stylist Details</h2>
 <hr />
 <ul>
+<h3>Name of Stylist: @Html.DisplayFor(model => model.Name)</h3>
+<br>
+@if (@Model.Clients.Count == 0)
+{
+    <p> @Html.DisplayFor(model => model.Name) Doesn't have any clients at the moment</p>
+}
+
+@foreach (Client client in @Model.Clients)
+{
+    <li> @client.Name</li>
+}
+
 <h3>@Html.ActionLink($"{ Model.Name } Clients", "Index", "Clients")</h3>
 <p>@Html.ActionLink("Back to list", "Index")</p>
 
